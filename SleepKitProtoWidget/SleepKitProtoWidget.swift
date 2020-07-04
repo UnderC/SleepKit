@@ -10,17 +10,16 @@ import WidgetKit
 import SwiftUI
 import Intents
 
-let s = SleepKitStore()
 struct Provider: IntentTimelineProvider {
     public func snapshot(for configuration: ConfigurationIntent, with context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+        let entry = SimpleEntry(date: Date(), percent: 0, configuration: configuration)
         completion(entry)
     }
 
     public func timeline(for configuration: ConfigurationIntent, with context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        
+        let sleep = SleepKitStruct()
         let date = Date()
-        let entry = SimpleEntry(date: date, configuration: configuration)
+        let entry = SimpleEntry(date: date, percent: sleep.percent, configuration: configuration)
         
         let nextUpdateDate = Calendar.current.date(byAdding: .minute, value: 10, to: date)!
         let timeline = Timeline(entries: [entry], policy: .after(nextUpdateDate))
@@ -30,24 +29,21 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     public let date: Date
+    public let percent: Float
     public let configuration: ConfigurationIntent
 }
 
 struct SleepKitProtoWidgetEntryView : View {
     var entry: Provider.Entry
-    @State var progress = Float(s.get() ?? 0) / Float(s.sleepGoal)
-
     var body: some View {
-        ProgressView(progress: self.$progress)
+        return ProgressView(progress: entry.percent)
             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }
 
 struct PlaceholderView : View {
-    @State var progress = Float(0)
-
     var body: some View {
-        ProgressView(progress: self.$progress)
+        ProgressView(progress: 0)
             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
     }
 }

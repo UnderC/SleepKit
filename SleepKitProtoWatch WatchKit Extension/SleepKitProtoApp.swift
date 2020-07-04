@@ -10,10 +10,12 @@ import SwiftUI
 
 @main
 struct SleepKitProtoApp: App {
+    var sleep = SleepKitStore()
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView().environmentObject(sleep)
             }
         }
 

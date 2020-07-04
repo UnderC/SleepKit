@@ -8,5 +8,6 @@
 
 import Foundation
 struct LocalKeys {
+    let cache: String = "SleepKit_SleepTimeCache"
     let goal: String = "SleepKit_SleepGoal"
 }

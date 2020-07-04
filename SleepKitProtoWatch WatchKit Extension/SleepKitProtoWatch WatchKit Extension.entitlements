@@ -5,9 +5,7 @@
 	<key>com.apple.developer.healthkit</key>
 	<true/>
 	<key>com.apple.developer.healthkit.access</key>
-	<array>
-		<string>health-records</string>
-	</array>
+	<array/>
 	<key>com.apple.security.application-groups</key>
 	<array>
 		<string>group.com.DevUC.SleepKitProto</string>

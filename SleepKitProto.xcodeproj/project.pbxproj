@@ -16,10 +16,6 @@
 		AE4B70CE24AB65E500123B68 /* SleepKitProtoWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = AE4B70C924AB65E300123B68 /* SleepKitProtoWidget.intentdefinition */; };
 		AE4B70D124AB65E500123B68 /* SleepKitProtoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE4B70C124AB65E300123B68 /* SleepKitProtoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AE4B70D724AB65F500123B68 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B70BB24A725D700123B68 /* HealthKit.framework */; };
-		AE4B70E224AB6A0A00123B68 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B70E124AB6A0A00123B68 /* SleepKitLib.swift */; };
-		AE4B70E324AB6A0A00123B68 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B70E124AB6A0A00123B68 /* SleepKitLib.swift */; };
-		AE4B70E524AB6A2D00123B68 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B70E424AB6A2D00123B68 /* LocalKeys.swift */; };
-		AE4B70E624AB6A2D00123B68 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4B70E424AB6A2D00123B68 /* LocalKeys.swift */; };
 		AE59C41224A6394D009EA72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59C41124A6394D009EA72D /* AppDelegate.swift */; };
 		AE59C41424A6394D009EA72D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59C41324A6394D009EA72D /* SceneDelegate.swift */; };
 		AE59C41624A6394D009EA72D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59C41524A6394D009EA72D /* ContentView.swift */; };
@@ -38,6 +34,19 @@
 		AEB65D2624ADE73F005A6975 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D2524ADE73F005A6975 /* ComplicationController.swift */; };
 		AEB65D2824ADE742005A6975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB65D2724ADE742005A6975 /* Assets.xcassets */; };
 		AEB65D2B24ADE742005A6975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB65D2A24ADE742005A6975 /* Preview Assets.xcassets */; };
+		AEB65D3B24B04887005A6975 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
+		AEB65D3C24B04887005A6975 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
+		AEB65D3D24B04887005A6975 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
+		AEB65D3F24B0490F005A6975 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
+		AEB65D4024B0490F005A6975 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
+		AEB65D4124B0490F005A6975 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
+		AEB65D4424B049CC005A6975 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB65D4324B049CC005A6975 /* HealthKit.framework */; };
+		AEB65D4624B04E00005A6975 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
+		AEB65D4724B04E00005A6975 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
+		AEB65D4824B04E00005A6975 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
+		AEB65D4C24B06BBF005A6975 /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
+		AEB65D4D24B06BBF005A6975 /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
+		AEB65D4E24B06BBF005A6975 /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +120,6 @@
 		AE4B70CA24AB65E500123B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE4B70CC24AB65E500123B68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE4B70D624AB65F500123B68 /* SleepKitProtoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitProtoWidgetExtension.entitlements; sourceTree = "<group>"; };
-		AE4B70E124AB6A0A00123B68 /* SleepKitLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepKitLib.swift; sourceTree = "<group>"; };
-		AE4B70E424AB6A2D00123B68 /* LocalKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalKeys.swift; sourceTree = "<group>"; };
 		AE59C40E24A6394D009EA72D /* SleepKitProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepKitProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE59C41124A6394D009EA72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE59C41324A6394D009EA72D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +129,9 @@
 		AE59C41D24A63952009EA72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE59C41F24A63952009EA72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		AE74472A24B07E7900E3ABD5 /* SleepKitProtoDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitProtoDebug.entitlements; sourceTree = "<group>"; };
+		AE74472B24B07E9700E3ABD5 /* SleepKitProtoWidgetExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitProtoWidgetExtensionDebug.entitlements; sourceTree = "<group>"; };
+		AE74472C24B07E9D00E3ABD5 /* SleepKitProtoWatch WatchKit ExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SleepKitProtoWatch WatchKit ExtensionDebug.entitlements"; sourceTree = "<group>"; };
 		AEB65D0924ADE736005A6975 /* SleepKitProtoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepKitProtoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB65D0C24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SleepKitProtoWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB65D1124ADE73F005A6975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +146,12 @@
 		AEB65D2A24ADE742005A6975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEB65D2C24ADE742005A6975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB65D2D24ADE742005A6975 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AEB65D3A24B04887005A6975 /* SleepKitLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepKitLib.swift; sourceTree = "<group>"; };
+		AEB65D3E24B0490F005A6975 /* LocalKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalKeys.swift; sourceTree = "<group>"; };
+		AEB65D4224B049CC005A6975 /* SleepKitProtoWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SleepKitProtoWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		AEB65D4324B049CC005A6975 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		AEB65D4524B04E00005A6975 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepKitStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB65D4424B049CC005A6975 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,12 +187,12 @@
 		AE4B70BA24A725D700123B68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AE4B70E424AB6A2D00123B68 /* LocalKeys.swift */,
-				AE4B70E124AB6A0A00123B68 /* SleepKitLib.swift */,
+				AEB65D4A24B06B75005A6975 /* Components */,
+				AEB65D4924B06B65005A6975 /* SleepKit */,
+				AEB65D4324B049CC005A6975 /* HealthKit.framework */,
 				AE4B70BB24A725D700123B68 /* HealthKit.framework */,
 				AE4B70C224AB65E300123B68 /* WidgetKit.framework */,
 				AE4B70C424AB65E300123B68 /* SwiftUI.framework */,
-				AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,17 +208,10 @@
 			path = SleepKitProtoWidget;
 			sourceTree = "<group>";
 		};
-		AE4B70E724AB6FA700123B68 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
 		AE59C40524A6394D009EA72D = {
 			isa = PBXGroup;
 			children = (
-				AE4B70E724AB6FA700123B68 /* Libs */,
+				AE74472B24B07E9700E3ABD5 /* SleepKitProtoWidgetExtensionDebug.entitlements */,
 				AE4B70D624AB65F500123B68 /* SleepKitProtoWidgetExtension.entitlements */,
 				AE59C41024A6394D009EA72D /* SleepKitProto */,
 				AE4B70C624AB65E300123B68 /* SleepKitProtoWidget */,
@@ -227,6 +237,7 @@
 		AE59C41024A6394D009EA72D /* SleepKitProto */ = {
 			isa = PBXGroup;
 			children = (
+				AE74472A24B07E7900E3ABD5 /* SleepKitProtoDebug.entitlements */,
 				AE4B70B924A725D700123B68 /* SleepKitProto.entitlements */,
 				AE59C41124A6394D009EA72D /* AppDelegate.swift */,
 				AE59C41324A6394D009EA72D /* SceneDelegate.swift */,
@@ -259,6 +270,8 @@
 		AEB65D1C24ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AE74472C24B07E9D00E3ABD5 /* SleepKitProtoWatch WatchKit ExtensionDebug.entitlements */,
+				AEB65D4224B049CC005A6975 /* SleepKitProtoWatch WatchKit Extension.entitlements */,
 				AEB65D1D24ADE73F005A6975 /* SleepKitProtoApp.swift */,
 				AEB65D1F24ADE73F005A6975 /* ContentView.swift */,
 				AEB65D2124ADE73F005A6975 /* NotificationController.swift */,
@@ -278,6 +291,25 @@
 				AEB65D2A24ADE742005A6975 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AEB65D4924B06B65005A6975 /* SleepKit */ = {
+			isa = PBXGroup;
+			children = (
+				AEB65D3A24B04887005A6975 /* SleepKitLib.swift */,
+				AEB65D3E24B0490F005A6975 /* LocalKeys.swift */,
+				AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */,
+			);
+			name = SleepKit;
+			sourceTree = "<group>";
+		};
+		AEB65D4A24B06B75005A6975 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */,
+				AEB65D4524B04E00005A6975 /* ListItem.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,9 +420,11 @@
 					};
 					AEB65D0824ADE736005A6975 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					AEB65D0B24ADE737005A6975 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					AEB65D1724ADE73F005A6975 = {
 						CreatedOnToolsVersion = 12.0;
@@ -469,11 +503,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE4B70E324AB6A0A00123B68 /* SleepKitLib.swift in Sources */,
-				AE4B70E624AB6A2D00123B68 /* LocalKeys.swift in Sources */,
+				AEB65D4724B04E00005A6975 /* ListItem.swift in Sources */,
+				AEB65D3C24B04887005A6975 /* SleepKitLib.swift in Sources */,
 				AE5E26BE24ACB6F4002B1156 /* ProgressView.swift in Sources */,
+				AEB65D4024B0490F005A6975 /* LocalKeys.swift in Sources */,
 				AE4B70CD24AB65E500123B68 /* SleepKitProtoWidget.intentdefinition in Sources */,
 				AE4B70C824AB65E300123B68 /* SleepKitProtoWidget.swift in Sources */,
+				AEB65D4D24B06BBF005A6975 /* SleepKitStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,10 +517,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB65D3F24B0490F005A6975 /* LocalKeys.swift in Sources */,
 				AE59C41224A6394D009EA72D /* AppDelegate.swift in Sources */,
-				AE4B70E524AB6A2D00123B68 /* LocalKeys.swift in Sources */,
-				AE4B70E224AB6A0A00123B68 /* SleepKitLib.swift in Sources */,
 				AE4B70CE24AB65E500123B68 /* SleepKitProtoWidget.intentdefinition in Sources */,
+				AEB65D3B24B04887005A6975 /* SleepKitLib.swift in Sources */,
+				AEB65D4C24B06BBF005A6975 /* SleepKitStruct.swift in Sources */,
+				AEB65D4624B04E00005A6975 /* ListItem.swift in Sources */,
 				AE5E26BD24ACB6F4002B1156 /* ProgressView.swift in Sources */,
 				AE59C41424A6394D009EA72D /* SceneDelegate.swift in Sources */,
 				AE59C41624A6394D009EA72D /* ContentView.swift in Sources */,
@@ -495,8 +533,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB65D4124B0490F005A6975 /* LocalKeys.swift in Sources */,
 				AEB65D2224ADE73F005A6975 /* NotificationController.swift in Sources */,
 				AEB65D2024ADE73F005A6975 /* ContentView.swift in Sources */,
+				AEB65D3D24B04887005A6975 /* SleepKitLib.swift in Sources */,
+				AEB65D4E24B06BBF005A6975 /* SleepKitStruct.swift in Sources */,
+				AEB65D4824B04E00005A6975 /* ListItem.swift in Sources */,
 				AEB65D2624ADE73F005A6975 /* ComplicationController.swift in Sources */,
 				AEB65D1E24ADE73F005A6975 /* SleepKitProtoApp.swift in Sources */,
 				AEB65D2424ADE73F005A6975 /* NotificationView.swift in Sources */,
@@ -540,7 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = SleepKitProtoWidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SleepKitProtoWidgetExtensionDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV38S42F98;
 				INFOPLIST_FILE = SleepKitProtoWidget/Info.plist;
@@ -700,7 +742,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SleepKitProto/SleepKitProto.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SleepKitProto/SleepKitProtoDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepKitProto/Preview Content\"";
 				DEVELOPMENT_TEAM = BV38S42F98;
@@ -743,12 +785,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BV38S42F98;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -757,11 +806,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BV38S42F98;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.Watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -773,14 +828,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV38S42F98;
 				IBSC_MODULE = SleepKitProtoWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "SleepKitProtoWatch WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
@@ -793,11 +855,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BV38S42F98;
 				IBSC_MODULE = SleepKitProtoWatch_WatchKit_Extension;
 				INFOPLIST_FILE = "SleepKitProtoWatch WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch.watchkitapp;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.Watch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -811,6 +879,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SleepKitProtoWatch WatchKit Extension/SleepKitProtoWatch WatchKit ExtensionDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepKitProtoWatch WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = BV38S42F98;
@@ -835,6 +904,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SleepKitProtoWatch WatchKit Extension/SleepKitProtoWatch WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SleepKitProtoWatch WatchKit Extension/Preview Content\"";
 				DEVELOPMENT_TEAM = BV38S42F98;
@@ -845,7 +915,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.Watch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;

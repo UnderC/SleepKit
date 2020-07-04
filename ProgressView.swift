@@ -12,9 +12,9 @@ import Foundation
 import SwiftUI
 
 struct ProgressView: View {
-    @Binding var progress: Float
+    var progress: Float
     var body: some View {
-        ZStack {
+        return ZStack {
             Circle()
                 .stroke(lineWidth: 20)
                 .opacity(0.5)
@@ -27,7 +27,7 @@ struct ProgressView: View {
                 .rotationEffect(Angle(degrees: 270))
                 .animation(.linear)
             
-            Text("\(Int(progress * 100))")
+            Text("\(Int(progress))")
                 .font(.largeTitle)
                 .bold()
         }

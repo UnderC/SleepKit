@@ -9,34 +9,28 @@
 import Foundation
 import HealthKit
 
-let defaults = UserDefaults.standard
-let localKeys = LocalKeys()
-
-public class SleepKitStore: ObservableObject {
+public class SleepKitStore: SleepKitStruct {
     var store: HKHealthStore? = nil
-    @Published var sleepTime: Int? = nil
-    @Published var sleepGoal: Int = 21600
+    
     @Published var avaliable: Bool = false
     @Published var loaded: Bool = false
+    
     var cache: Array<HKCategorySample> = []
     
-    init () {
+    override init () {
+        super.init()
         self.avaliable = HKHealthStore.isHealthDataAvailable()
         if !self.avaliable { return }
         
         // Authorization
-        
-        let readDatas = Set<HKSampleType>(arrayLiteral: HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
+        let readDatas = Set([HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!])
         self.store = HKHealthStore()
-        self.store?.requestAuthorization(toShare: nil, read: readDatas, completion: { (success, err) in
+        self.store?.requestAuthorization(toShare: nil, read: readDatas, completion: {
+            (success, err) in
             if (err == nil || !success) { self.avaliable = false }
             self.avaliable = true
             self.refresh()
         })
-        
-        if let dataGoal = defaults.string(forKey: localKeys.goal) {
-            self.sleepGoal = Int(dataGoal)!
-        }
     }
     
     func refresh () {
@@ -76,7 +70,11 @@ public class SleepKitStore: ObservableObject {
                 }
                 result += Int(lastest.endDate.timeIntervalSince(lastest.startDate))
             }
-            if result != 0 { return result }
+            if result != 0 {
+                defaults!.set(result, forKey: localKeys.cache)
+                defaults!.synchronize()
+                return result
+            }
             return get(gap + 1)
         }
         return nil

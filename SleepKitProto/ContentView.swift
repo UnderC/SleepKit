@@ -10,26 +10,19 @@ import HealthKit
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var s: SleepKitStore
+    @EnvironmentObject var sleep: SleepKitStore
     @State var loadTaskQueue: DispatchQueue? = nil
     @State var showSettingGoal = false
-    @State var progress = Float(0)
+    //@State var percent: Float = Float(0)
     
     var body: some View {
         return NavigationView {
             List {
+                ListItemView(title: "HK 접근 가능 여부", value: String(sleep.avaliable))
                 HStack{
                     VStack(alignment: .leading) {
-                        Text("HealthStore에 접근이 가능한가?")
-                    }
-                    Spacer()
-                    Text(String(s.avaliable))
-                }
-                
-                HStack{
-                    VStack(alignment: .leading) {
-                        Text("어제 숙면한 시간")
-                        Text(s.format(self.s.sleepTime ?? 0)).font(.system(size: 12.5))
+                        Text("수면 시간")
+                        Text(sleep.format(sleep.sleepTime ?? 0)).font(.system(size: 12.5))
                     }
                     Spacer()
                     Button(action: {
@@ -41,45 +34,30 @@ struct ContentView: View {
 
                 HStack{
                     VStack(alignment: .leading) {
-                        Text("너의 목표")
-                        Text(s.format(self.s.sleepGoal)).font(.system(size: 12.5))
-                    }
-                    Spacer()
-                    Button(action: {}) {
-                        Text("목표 설정")
-                    }
-                }
-                
-                HStack{
-                    VStack(alignment: .leading) {
-                        Text("달성도")
+                        Text("수면 목표")
+                        Text(sleep.format(sleep.sleepGoal)).font(.system(size: 12.5))
                     }
                     Spacer()
                     Button(action: {
                         self.showSettingGoal.toggle()
                     }) {
-                        Text("\(Int(progress * 100)) %")
+                        Text("목표 설정")
                     }
                 }
-            
-                HStack{
-                    VStack(alignment: .leading) {
-                        Text("달성 했니?")
-                    }
-                    Spacer()
-                    Text(String(self.s.sleepGoal < self.s.sleepTime ?? 0))
-                }
+                
+                ListItemView(title: "달성률", value: "\(Int(sleep.percent)) %")
+                ListItemView(title: "달성 여부", value: String(sleep.result))
             }.navigationBarTitle(Text("SleepKit"))
         }.onAppear {
             self.refresh()
         }.sheet(isPresented: self.$showSettingGoal) {
-            ProgressView(progress: self.$progress).frame(width: 150, height: 150, alignment: .center)
+            ProgressView(progress: sleep.percent).frame(width: 150, height: 150, alignment: .center)
         }
     }
     
     func refresh () {
-        self.s.sleepTime = self.s.get()
-        self.progress = Float(self.s.sleepTime ?? 0) / Float(self.s.sleepGoal)
+        sleep.sleepTime = sleep.get()
+        //percent = self.sleep.percent
     }
 }
 
