@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>SleepKitProtoWatch WatchKit Extension</string>
+	<string>SleepKitProto</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,24 +17,17 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>CLKComplicationPrincipalClass</key>
-	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
-	<key>NSExtension</key>
-	<dict>
-		<key>NSExtensionAttributes</key>
-		<dict>
-			<key>WKAppBundleIdentifier</key>
-			<string>DevUC.SleepKitProtoWatch.watchkitapp</string>
-		</dict>
-		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.watchkit</string>
-	</dict>
-	<key>NSHealthShareUsageDescription</key>
-	<string>jfljfljfsfjfjafijafjaeifja jifajdo dasidjsaoda djwiod wj</string>
-	<key>WKWatchOnly</key>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+	<key>WKCompanionAppBundleIdentifier</key>
+	<string>DevUC.SleepKitProto</string>
+	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
 </plist>

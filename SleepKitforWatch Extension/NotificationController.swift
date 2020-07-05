@@ -1,8 +1,8 @@
 //
 //  NotificationController.swift
-//  SleepKitProtoWatch WatchKit Extension
+//  SleepKitforWatch Extension
 //
-//  Created by 현 on 2020/07/02.
+//  Created by 현 on 2020/07/05.
 //  Copyright © 2020 현. All rights reserved.
 //
 

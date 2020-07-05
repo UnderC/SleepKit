@@ -57,32 +57,37 @@ public class SleepKitStore: SleepKitStruct {
         self.store?.execute(query)
     }
     
-    func get (_ gap: Int = 0) -> Int? {
+    func get (_ gap: Int = 0) -> Int {
+        var result = 0
         if self.cache.capacity > 0 {
-            var result = 0
             let today = Calendar.current.dateComponents([.day], from: Date()).day
             let todayDate = gap > today! ? (31 - gap) : (today! - gap)
             for lastest in self.cache {
-                //print("\(lastest.startDate), \(lastest.endDate), \(lastest.value)")
                 let lastDate = Calendar.current.dateComponents([.day], from: lastest.endDate).day
                 if (lastDate != todayDate) || lastest.value == 1 {
                     continue
                 }
                 result += Int(lastest.endDate.timeIntervalSince(lastest.startDate))
             }
-            if result != 0 {
-                defaults!.set(result, forKey: localKeys.cache)
-                defaults!.synchronize()
-                return result
-            }
-            return get(gap + 1)
+            if result == 0 { return get(gap + 1) }
         }
-        return nil
+        self.save(result)
+        return result
     }
     
     func format (_ timeGap: Int) -> String {
         let hours = Int(timeGap / 3600)
         let minutes = Int((Int(timeGap) - (hours * 3600)) / 60)
         return "\(hours)시간 \(minutes)분"
+    }
+    
+    func save (_ time: Int = 0) {
+        defaults!.set(String(time), forKey: localKeys.cache)
+        defaults!.synchronize()
+    }
+    
+    func test () {
+        self.sleepTime += 3600
+        self.save(self.sleepTime)
     }
 }

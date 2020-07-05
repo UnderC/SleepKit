@@ -8,21 +8,24 @@
 
 import Foundation
 
-let defaults = UserDefaults(suiteName: "group.DevUC.SleepKitProto")
 let localKeys = LocalKeys()
 
 public class SleepKitStruct: ObservableObject {
-    @Published var sleepTime: Int? = nil
+    @Published var sleepTime: Int = 0
     @Published var sleepGoal: Int = 21600
+    var defaults: UserDefaults? = nil
+    
     var result: Bool {
-        get { (self.sleepTime ?? 0) > self.sleepGoal }
+        get { self.sleepTime >= self.sleepGoal }
     }
     
     public var percent: Float {
-        get { /*Int*/(Float(sleepTime ?? 0) / Float(sleepGoal) * 100) }
+        get { /*Int*/(Float(sleepTime) / Float(sleepGoal) * 100) }
     }
     
     init () {
+        defaults = UserDefaults(suiteName: "group.DevUC.SleepKitProto")
+        
         if let dataGoal = defaults!.string(forKey: localKeys.goal) {
             self.sleepGoal = Int(dataGoal)!
         }

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE1F142524B1AA110043F7E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1F142324B1AA110043F7E4 /* Interface.storyboard */; };
+		AE1F142724B1AA130043F7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1F142624B1AA130043F7E4 /* Assets.xcassets */; };
+		AE1F142E24B1AA130043F7E4 /* SleepKitforWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE1F142D24B1AA130043F7E4 /* SleepKitforWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE1F143324B1AA130043F7E4 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F143224B1AA130043F7E4 /* HostingController.swift */; };
+		AE1F143524B1AA130043F7E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F143424B1AA130043F7E4 /* ContentView.swift */; };
+		AE1F143724B1AA130043F7E4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F143624B1AA130043F7E4 /* ExtensionDelegate.swift */; };
+		AE1F143924B1AA130043F7E4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F143824B1AA130043F7E4 /* NotificationController.swift */; };
+		AE1F143B24B1AA130043F7E4 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F143A24B1AA130043F7E4 /* NotificationView.swift */; };
+		AE1F143D24B1AA130043F7E4 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1F143C24B1AA130043F7E4 /* ComplicationController.swift */; };
+		AE1F143F24B1AA140043F7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1F143E24B1AA140043F7E4 /* Assets.xcassets */; };
+		AE1F144224B1AA140043F7E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1F144124B1AA140043F7E4 /* Preview Assets.xcassets */; };
+		AE1F144724B1AA140043F7E4 /* SleepKitforWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AE1F142124B1AA110043F7E4 /* SleepKitforWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AE4B70BC24A725D700123B68 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B70BB24A725D700123B68 /* HealthKit.framework */; };
 		AE4B70C324AB65E300123B68 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B70C224AB65E300123B68 /* WidgetKit.framework */; };
 		AE4B70C524AB65E300123B68 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4B70C424AB65E300123B68 /* SwiftUI.framework */; };
@@ -24,32 +36,37 @@
 		AE59C41E24A63952009EA72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE59C41C24A63952009EA72D /* LaunchScreen.storyboard */; };
 		AE5E26BD24ACB6F4002B1156 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */; };
 		AE5E26BE24ACB6F4002B1156 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */; };
-		AEB65D0D24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AEB65D0C24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AEB65D1224ADE73F005A6975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB65D1124ADE73F005A6975 /* Assets.xcassets */; };
-		AEB65D1924ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AEB65D1824ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		AEB65D1E24ADE73F005A6975 /* SleepKitProtoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D1D24ADE73F005A6975 /* SleepKitProtoApp.swift */; };
-		AEB65D2024ADE73F005A6975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D1F24ADE73F005A6975 /* ContentView.swift */; };
-		AEB65D2224ADE73F005A6975 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D2124ADE73F005A6975 /* NotificationController.swift */; };
-		AEB65D2424ADE73F005A6975 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D2324ADE73F005A6975 /* NotificationView.swift */; };
-		AEB65D2624ADE73F005A6975 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D2524ADE73F005A6975 /* ComplicationController.swift */; };
-		AEB65D2824ADE742005A6975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB65D2724ADE742005A6975 /* Assets.xcassets */; };
-		AEB65D2B24ADE742005A6975 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB65D2A24ADE742005A6975 /* Preview Assets.xcassets */; };
 		AEB65D3B24B04887005A6975 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
-		AEB65D3C24B04887005A6975 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
-		AEB65D3D24B04887005A6975 /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
 		AEB65D3F24B0490F005A6975 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
 		AEB65D4024B0490F005A6975 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
-		AEB65D4124B0490F005A6975 /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
-		AEB65D4424B049CC005A6975 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB65D4324B049CC005A6975 /* HealthKit.framework */; };
 		AEB65D4624B04E00005A6975 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
 		AEB65D4724B04E00005A6975 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
-		AEB65D4824B04E00005A6975 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
 		AEB65D4C24B06BBF005A6975 /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
 		AEB65D4D24B06BBF005A6975 /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
-		AEB65D4E24B06BBF005A6975 /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
+		AEC31D2B24B1AB7300E5919B /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
+		AEC31D2C24B1AB7A00E5919B /* SleepKitLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3A24B04887005A6975 /* SleepKitLib.swift */; };
+		AEC31D2D24B1ABBD00E5919B /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4524B04E00005A6975 /* ListItem.swift */; };
+		AEC31D2E24B1ABC000E5919B /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */; };
+		AEC31D2F24B1ABC600E5919B /* SleepKitStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */; };
+		AEC31D3024B1ABC900E5919B /* LocalKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB65D3E24B0490F005A6975 /* LocalKeys.swift */; };
+		AEC31D3324B1AC9300E5919B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB65D4324B049CC005A6975 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AE1F142F24B1AA130043F7E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE59C40624A6394D009EA72D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1F142C24B1AA130043F7E4;
+			remoteInfo = "SleepKitforWatch Extension";
+		};
+		AE1F144524B1AA140043F7E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE59C40624A6394D009EA72D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE1F142024B1AA110043F7E4;
+			remoteInfo = SleepKitforWatch;
+		};
 		AE4B70CF24AB65E500123B68 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE59C40624A6394D009EA72D /* Project object */;
@@ -57,23 +74,31 @@
 			remoteGlobalIDString = AE4B70C024AB65E300123B68;
 			remoteInfo = SleepKitProtoWidgetExtension;
 		};
-		AEB65D0E24ADE737005A6975 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE59C40624A6394D009EA72D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEB65D0B24ADE737005A6975;
-			remoteInfo = "SleepKitProtoWatch WatchKit App";
-		};
-		AEB65D1A24ADE73F005A6975 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE59C40624A6394D009EA72D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEB65D1724ADE73F005A6975;
-			remoteInfo = "SleepKitProtoWatch WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AE1F141724B1A8340043F7E4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AE1F144724B1AA140043F7E4 /* SleepKitforWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1F144B24B1AA150043F7E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE1F142E24B1AA130043F7E4 /* SleepKitforWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE4B70D524AB65E500123B68 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,31 +110,24 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEB65D3024ADE742005A6975 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				AEB65D0D24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEB65D3324ADE742005A6975 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				AEB65D1924ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE1F142124B1AA110043F7E4 /* SleepKitforWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepKitforWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1F142424B1AA110043F7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AE1F142624B1AA130043F7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE1F142824B1AA130043F7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1F142D24B1AA130043F7E4 /* SleepKitforWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SleepKitforWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE1F143224B1AA130043F7E4 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		AE1F143424B1AA130043F7E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE1F143624B1AA130043F7E4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AE1F143824B1AA130043F7E4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AE1F143A24B1AA130043F7E4 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		AE1F143C24B1AA130043F7E4 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		AE1F143E24B1AA140043F7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE1F144124B1AA140043F7E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE1F144324B1AA140043F7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1F144424B1AA140043F7E4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		AE4B70B924A725D700123B68 /* SleepKitProto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitProto.entitlements; sourceTree = "<group>"; };
 		AE4B70BB24A725D700123B68 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		AE4B70C124AB65E300123B68 /* SleepKitProtoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SleepKitProtoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,30 +149,26 @@
 		AE5E26BC24ACB6F4002B1156 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		AE74472A24B07E7900E3ABD5 /* SleepKitProtoDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitProtoDebug.entitlements; sourceTree = "<group>"; };
 		AE74472B24B07E9700E3ABD5 /* SleepKitProtoWidgetExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitProtoWidgetExtensionDebug.entitlements; sourceTree = "<group>"; };
-		AE74472C24B07E9D00E3ABD5 /* SleepKitProtoWatch WatchKit ExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SleepKitProtoWatch WatchKit ExtensionDebug.entitlements"; sourceTree = "<group>"; };
-		AEB65D0924ADE736005A6975 /* SleepKitProtoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepKitProtoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEB65D0C24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SleepKitProtoWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEB65D1124ADE73F005A6975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEB65D1324ADE73F005A6975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEB65D1824ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SleepKitProtoWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEB65D1D24ADE73F005A6975 /* SleepKitProtoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepKitProtoApp.swift; sourceTree = "<group>"; };
-		AEB65D1F24ADE73F005A6975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AEB65D2124ADE73F005A6975 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		AEB65D2324ADE73F005A6975 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		AEB65D2524ADE73F005A6975 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		AEB65D2724ADE742005A6975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEB65D2A24ADE742005A6975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		AEB65D2C24ADE742005A6975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEB65D2D24ADE742005A6975 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		AEB65D3A24B04887005A6975 /* SleepKitLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepKitLib.swift; sourceTree = "<group>"; };
 		AEB65D3E24B0490F005A6975 /* LocalKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalKeys.swift; sourceTree = "<group>"; };
-		AEB65D4224B049CC005A6975 /* SleepKitProtoWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SleepKitProtoWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		AEB65D4324B049CC005A6975 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		AEB65D4524B04E00005A6975 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		AEB65D4B24B06BBF005A6975 /* SleepKitStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepKitStruct.swift; sourceTree = "<group>"; };
+		AEC31D3124B1AC8800E5919B /* SleepKitforWatchDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitforWatchDebug.entitlements; sourceTree = "<group>"; };
+		AEC31D3224B1AC9100E5919B /* SleepKitforWatch ExtensionDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SleepKitforWatch ExtensionDebug.entitlements"; sourceTree = "<group>"; };
+		AED2FD2524B1BD93008D0B8E /* SleepKitforWatchRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SleepKitforWatchRelease.entitlements; sourceTree = "<group>"; };
+		AED2FD2624B1BD99008D0B8E /* SleepKitforWatch ExtensionRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SleepKitforWatch ExtensionRelease.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE1F142A24B1AA130043F7E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC31D3324B1AC9300E5919B /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE4B70BE24AB65E300123B68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,17 +187,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEB65D1524ADE73F005A6975 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEB65D4424B049CC005A6975 /* HealthKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE1F142224B1AA110043F7E4 /* SleepKitforWatch */ = {
+			isa = PBXGroup;
+			children = (
+				AED2FD2524B1BD93008D0B8E /* SleepKitforWatchRelease.entitlements */,
+				AEC31D3124B1AC8800E5919B /* SleepKitforWatchDebug.entitlements */,
+				AE1F142324B1AA110043F7E4 /* Interface.storyboard */,
+				AE1F142624B1AA130043F7E4 /* Assets.xcassets */,
+				AE1F142824B1AA130043F7E4 /* Info.plist */,
+			);
+			path = SleepKitforWatch;
+			sourceTree = "<group>";
+		};
+		AE1F143124B1AA130043F7E4 /* SleepKitforWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AED2FD2624B1BD99008D0B8E /* SleepKitforWatch ExtensionRelease.entitlements */,
+				AEC31D3224B1AC9100E5919B /* SleepKitforWatch ExtensionDebug.entitlements */,
+				AE1F143224B1AA130043F7E4 /* HostingController.swift */,
+				AE1F143424B1AA130043F7E4 /* ContentView.swift */,
+				AE1F143624B1AA130043F7E4 /* ExtensionDelegate.swift */,
+				AE1F143824B1AA130043F7E4 /* NotificationController.swift */,
+				AE1F143A24B1AA130043F7E4 /* NotificationView.swift */,
+				AE1F143C24B1AA130043F7E4 /* ComplicationController.swift */,
+				AE1F143E24B1AA140043F7E4 /* Assets.xcassets */,
+				AE1F144324B1AA140043F7E4 /* Info.plist */,
+				AE1F144424B1AA140043F7E4 /* PushNotificationPayload.apns */,
+				AE1F144024B1AA140043F7E4 /* Preview Content */,
+			);
+			path = "SleepKitforWatch Extension";
+			sourceTree = "<group>";
+		};
+		AE1F144024B1AA140043F7E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE1F144124B1AA140043F7E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		AE4B70BA24A725D700123B68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,8 +260,8 @@
 				AE4B70D624AB65F500123B68 /* SleepKitProtoWidgetExtension.entitlements */,
 				AE59C41024A6394D009EA72D /* SleepKitProto */,
 				AE4B70C624AB65E300123B68 /* SleepKitProtoWidget */,
-				AEB65D1024ADE737005A6975 /* SleepKitProtoWatch WatchKit App */,
-				AEB65D1C24ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension */,
+				AE1F142224B1AA110043F7E4 /* SleepKitforWatch */,
+				AE1F143124B1AA130043F7E4 /* SleepKitforWatch Extension */,
 				AE59C40F24A6394D009EA72D /* Products */,
 				AE4B70BA24A725D700123B68 /* Frameworks */,
 			);
@@ -227,9 +272,8 @@
 			children = (
 				AE59C40E24A6394D009EA72D /* SleepKitProto.app */,
 				AE4B70C124AB65E300123B68 /* SleepKitProtoWidgetExtension.appex */,
-				AEB65D0924ADE736005A6975 /* SleepKitProtoWatch.app */,
-				AEB65D0C24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app */,
-				AEB65D1824ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension.appex */,
+				AE1F142124B1AA110043F7E4 /* SleepKitforWatch.app */,
+				AE1F142D24B1AA130043F7E4 /* SleepKitforWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,41 +302,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AEB65D1024ADE737005A6975 /* SleepKitProtoWatch WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				AEB65D1124ADE73F005A6975 /* Assets.xcassets */,
-				AEB65D1324ADE73F005A6975 /* Info.plist */,
-			);
-			path = "SleepKitProtoWatch WatchKit App";
-			sourceTree = "<group>";
-		};
-		AEB65D1C24ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				AE74472C24B07E9D00E3ABD5 /* SleepKitProtoWatch WatchKit ExtensionDebug.entitlements */,
-				AEB65D4224B049CC005A6975 /* SleepKitProtoWatch WatchKit Extension.entitlements */,
-				AEB65D1D24ADE73F005A6975 /* SleepKitProtoApp.swift */,
-				AEB65D1F24ADE73F005A6975 /* ContentView.swift */,
-				AEB65D2124ADE73F005A6975 /* NotificationController.swift */,
-				AEB65D2324ADE73F005A6975 /* NotificationView.swift */,
-				AEB65D2524ADE73F005A6975 /* ComplicationController.swift */,
-				AEB65D2724ADE742005A6975 /* Assets.xcassets */,
-				AEB65D2C24ADE742005A6975 /* Info.plist */,
-				AEB65D2D24ADE742005A6975 /* PushNotificationPayload.apns */,
-				AEB65D2924ADE742005A6975 /* Preview Content */,
-			);
-			path = "SleepKitProtoWatch WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		AEB65D2924ADE742005A6975 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				AEB65D2A24ADE742005A6975 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		AEB65D4924B06B65005A6975 /* SleepKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +324,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE1F142024B1AA110043F7E4 /* SleepKitforWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1F144C24B1AA150043F7E4 /* Build configuration list for PBXNativeTarget "SleepKitforWatch" */;
+			buildPhases = (
+				AE1F141F24B1AA110043F7E4 /* Resources */,
+				AE1F144B24B1AA150043F7E4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE1F143024B1AA130043F7E4 /* PBXTargetDependency */,
+			);
+			name = SleepKitforWatch;
+			productName = SleepKitforWatch;
+			productReference = AE1F142124B1AA110043F7E4 /* SleepKitforWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AE1F142C24B1AA130043F7E4 /* SleepKitforWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE1F144824B1AA150043F7E4 /* Build configuration list for PBXNativeTarget "SleepKitforWatch Extension" */;
+			buildPhases = (
+				AE1F142924B1AA130043F7E4 /* Sources */,
+				AE1F142A24B1AA130043F7E4 /* Frameworks */,
+				AE1F142B24B1AA130043F7E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SleepKitforWatch Extension";
+			productName = "SleepKitforWatch Extension";
+			productReference = AE1F142D24B1AA130043F7E4 /* SleepKitforWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		AE4B70C024AB65E300123B68 /* SleepKitProtoWidgetExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4B70D224AB65E500123B68 /* Build configuration list for PBXNativeTarget "SleepKitProtoWidgetExtension" */;
@@ -340,67 +383,18 @@
 				AE59C40B24A6394D009EA72D /* Frameworks */,
 				AE59C40C24A6394D009EA72D /* Resources */,
 				AE4B70D524AB65E500123B68 /* Embed App Extensions */,
+				AE1F141724B1A8340043F7E4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				AE4B70D024AB65E500123B68 /* PBXTargetDependency */,
+				AE1F144624B1AA140043F7E4 /* PBXTargetDependency */,
 			);
 			name = SleepKitProto;
 			productName = SleepKitProto;
 			productReference = AE59C40E24A6394D009EA72D /* SleepKitProto.app */;
 			productType = "com.apple.product-type.application";
-		};
-		AEB65D0824ADE736005A6975 /* SleepKitProtoWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEB65D3824ADE742005A6975 /* Build configuration list for PBXNativeTarget "SleepKitProtoWatch" */;
-			buildPhases = (
-				AEB65D0724ADE736005A6975 /* Resources */,
-				AEB65D3024ADE742005A6975 /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AEB65D0F24ADE737005A6975 /* PBXTargetDependency */,
-			);
-			name = SleepKitProtoWatch;
-			productName = SleepKitProtoWatch;
-			productReference = AEB65D0924ADE736005A6975 /* SleepKitProtoWatch.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
-		AEB65D0B24ADE737005A6975 /* SleepKitProtoWatch WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEB65D3724ADE742005A6975 /* Build configuration list for PBXNativeTarget "SleepKitProtoWatch WatchKit App" */;
-			buildPhases = (
-				AEB65D0A24ADE737005A6975 /* Resources */,
-				AEB65D3324ADE742005A6975 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AEB65D1B24ADE73F005A6975 /* PBXTargetDependency */,
-			);
-			name = "SleepKitProtoWatch WatchKit App";
-			productName = "SleepKitProtoWatch WatchKit App";
-			productReference = AEB65D0C24ADE737005A6975 /* SleepKitProtoWatch WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		AEB65D1724ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEB65D3624ADE742005A6975 /* Build configuration list for PBXNativeTarget "SleepKitProtoWatch WatchKit Extension" */;
-			buildPhases = (
-				AEB65D1424ADE73F005A6975 /* Sources */,
-				AEB65D1524ADE73F005A6975 /* Frameworks */,
-				AEB65D1624ADE73F005A6975 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SleepKitProtoWatch WatchKit Extension";
-			productName = "SleepKitProtoWatch WatchKit Extension";
-			productReference = AEB65D1824ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -412,22 +406,17 @@
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "현";
 				TargetAttributes = {
+					AE1F142024B1AA110043F7E4 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					AE1F142C24B1AA130043F7E4 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					AE4B70C024AB65E300123B68 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 					AE59C40D24A6394D009EA72D = {
 						CreatedOnToolsVersion = 11.5;
-					};
-					AEB65D0824ADE736005A6975 = {
-						CreatedOnToolsVersion = 12.0;
-						LastSwiftMigration = 1200;
-					};
-					AEB65D0B24ADE737005A6975 = {
-						CreatedOnToolsVersion = 12.0;
-						LastSwiftMigration = 1200;
-					};
-					AEB65D1724ADE73F005A6975 = {
-						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
@@ -446,14 +435,31 @@
 			targets = (
 				AE59C40D24A6394D009EA72D /* SleepKitProto */,
 				AE4B70C024AB65E300123B68 /* SleepKitProtoWidgetExtension */,
-				AEB65D0824ADE736005A6975 /* SleepKitProtoWatch */,
-				AEB65D0B24ADE737005A6975 /* SleepKitProtoWatch WatchKit App */,
-				AEB65D1724ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension */,
+				AE1F142024B1AA110043F7E4 /* SleepKitforWatch */,
+				AE1F142C24B1AA130043F7E4 /* SleepKitforWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AE1F141F24B1AA110043F7E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1F142724B1AA130043F7E4 /* Assets.xcassets in Resources */,
+				AE1F142524B1AA110043F7E4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1F142B24B1AA130043F7E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1F144224B1AA140043F7E4 /* Preview Assets.xcassets in Resources */,
+				AE1F143F24B1AA140043F7E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE4B70BF24AB65E300123B68 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -472,41 +478,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEB65D0724ADE736005A6975 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEB65D0A24ADE737005A6975 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEB65D1224ADE73F005A6975 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEB65D1624ADE73F005A6975 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEB65D2B24ADE742005A6975 /* Preview Assets.xcassets in Resources */,
-				AEB65D2824ADE742005A6975 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE1F142924B1AA130043F7E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1F143524B1AA130043F7E4 /* ContentView.swift in Sources */,
+				AEC31D2F24B1ABC600E5919B /* SleepKitStruct.swift in Sources */,
+				AE1F143324B1AA130043F7E4 /* HostingController.swift in Sources */,
+				AE1F143924B1AA130043F7E4 /* NotificationController.swift in Sources */,
+				AEC31D2B24B1AB7300E5919B /* SleepKitLib.swift in Sources */,
+				AEC31D2D24B1ABBD00E5919B /* ListItem.swift in Sources */,
+				AE1F143724B1AA130043F7E4 /* ExtensionDelegate.swift in Sources */,
+				AEC31D3024B1ABC900E5919B /* LocalKeys.swift in Sources */,
+				AE1F143B24B1AA130043F7E4 /* NotificationView.swift in Sources */,
+				AE1F143D24B1AA130043F7E4 /* ComplicationController.swift in Sources */,
+				AEC31D2E24B1ABC000E5919B /* ProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE4B70BD24AB65E300123B68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AEB65D4724B04E00005A6975 /* ListItem.swift in Sources */,
-				AEB65D3C24B04887005A6975 /* SleepKitLib.swift in Sources */,
 				AE5E26BE24ACB6F4002B1156 /* ProgressView.swift in Sources */,
 				AEB65D4024B0490F005A6975 /* LocalKeys.swift in Sources */,
+				AEC31D2C24B1AB7A00E5919B /* SleepKitLib.swift in Sources */,
 				AE4B70CD24AB65E500123B68 /* SleepKitProtoWidget.intentdefinition in Sources */,
 				AE4B70C824AB65E300123B68 /* SleepKitProtoWidget.swift in Sources */,
 				AEB65D4D24B06BBF005A6975 /* SleepKitStruct.swift in Sources */,
@@ -529,43 +529,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEB65D1424ADE73F005A6975 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEB65D4124B0490F005A6975 /* LocalKeys.swift in Sources */,
-				AEB65D2224ADE73F005A6975 /* NotificationController.swift in Sources */,
-				AEB65D2024ADE73F005A6975 /* ContentView.swift in Sources */,
-				AEB65D3D24B04887005A6975 /* SleepKitLib.swift in Sources */,
-				AEB65D4E24B06BBF005A6975 /* SleepKitStruct.swift in Sources */,
-				AEB65D4824B04E00005A6975 /* ListItem.swift in Sources */,
-				AEB65D2624ADE73F005A6975 /* ComplicationController.swift in Sources */,
-				AEB65D1E24ADE73F005A6975 /* SleepKitProtoApp.swift in Sources */,
-				AEB65D2424ADE73F005A6975 /* NotificationView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AE1F143024B1AA130043F7E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE1F142C24B1AA130043F7E4 /* SleepKitforWatch Extension */;
+			targetProxy = AE1F142F24B1AA130043F7E4 /* PBXContainerItemProxy */;
+		};
+		AE1F144624B1AA140043F7E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE1F142024B1AA110043F7E4 /* SleepKitforWatch */;
+			targetProxy = AE1F144524B1AA140043F7E4 /* PBXContainerItemProxy */;
+		};
 		AE4B70D024AB65E500123B68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AE4B70C024AB65E300123B68 /* SleepKitProtoWidgetExtension */;
 			targetProxy = AE4B70CF24AB65E500123B68 /* PBXContainerItemProxy */;
 		};
-		AEB65D0F24ADE737005A6975 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEB65D0B24ADE737005A6975 /* SleepKitProtoWatch WatchKit App */;
-			targetProxy = AEB65D0E24ADE737005A6975 /* PBXContainerItemProxy */;
-		};
-		AEB65D1B24ADE73F005A6975 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEB65D1724ADE73F005A6975 /* SleepKitProtoWatch WatchKit Extension */;
-			targetProxy = AEB65D1A24ADE73F005A6975 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AE1F142324B1AA110043F7E4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE1F142424B1AA110043F7E4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		AE59C41C24A63952009EA72D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -577,6 +569,102 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE1F144924B1AA150043F7E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SleepKitforWatch Extension/SleepKitforWatch ExtensionDebug.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SleepKitforWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = BV38S42F98;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SleepKitforWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		AE1F144A24B1AA150043F7E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SleepKitforWatch Extension/SleepKitforWatch ExtensionRelease.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SleepKitforWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = BV38S42F98;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SleepKitforWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		AE1F144D24B1AA150043F7E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SleepKitforWatch/SleepKitforWatchDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV38S42F98;
+				IBSC_MODULE = SleepKitforWatch_Extension;
+				INFOPLIST_FILE = SleepKitforWatch/Info.plist;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		AE1F144E24B1AA150043F7E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SleepKitforWatch/SleepKitforWatchRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV38S42F98;
+				IBSC_MODULE = SleepKitforWatch_Extension;
+				INFOPLIST_FILE = SleepKitforWatch/Info.plist;
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 		AE4B70D324AB65E500123B68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -591,6 +679,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.SleepKitProtoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -613,6 +702,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.SleepKitProtoWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -748,10 +838,12 @@
 				DEVELOPMENT_TEAM = BV38S42F98;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SleepKitProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -770,10 +862,12 @@
 				DEVELOPMENT_TEAM = BV38S42F98;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SleepKitProto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -781,153 +875,27 @@
 			};
 			name = Release;
 		};
-		AEB65D2E24ADE742005A6975 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BV38S42F98;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		AEB65D2F24ADE742005A6975 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BV38S42F98;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.Watch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AEB65D3124ADE742005A6975 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BV38S42F98;
-				IBSC_MODULE = SleepKitProtoWatch_WatchKit_Extension;
-				INFOPLIST_FILE = "SleepKitProtoWatch WatchKit App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		AEB65D3224ADE742005A6975 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BV38S42F98;
-				IBSC_MODULE = SleepKitProtoWatch_WatchKit_Extension;
-				INFOPLIST_FILE = "SleepKitProtoWatch WatchKit App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.Watch.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Release;
-		};
-		AEB65D3424ADE742005A6975 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "SleepKitProtoWatch WatchKit Extension/SleepKitProtoWatch WatchKit ExtensionDebug.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SleepKitProtoWatch WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = BV38S42F98;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SleepKitProtoWatch WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProtoWatch.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Debug;
-		};
-		AEB65D3524ADE742005A6975 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "SleepKitProtoWatch WatchKit Extension/SleepKitProtoWatch WatchKit Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SleepKitProtoWatch WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = BV38S42F98;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SleepKitProtoWatch WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = DevUC.SleepKitProto.Watch.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE1F144824B1AA150043F7E4 /* Build configuration list for PBXNativeTarget "SleepKitforWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1F144924B1AA150043F7E4 /* Debug */,
+				AE1F144A24B1AA150043F7E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1F144C24B1AA150043F7E4 /* Build configuration list for PBXNativeTarget "SleepKitforWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE1F144D24B1AA150043F7E4 /* Debug */,
+				AE1F144E24B1AA150043F7E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE4B70D224AB65E500123B68 /* Build configuration list for PBXNativeTarget "SleepKitProtoWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -951,33 +919,6 @@
 			buildConfigurations = (
 				AE59C42324A63952009EA72D /* Debug */,
 				AE59C42424A63952009EA72D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEB65D3624ADE742005A6975 /* Build configuration list for PBXNativeTarget "SleepKitProtoWatch WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEB65D3424ADE742005A6975 /* Debug */,
-				AEB65D3524ADE742005A6975 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEB65D3724ADE742005A6975 /* Build configuration list for PBXNativeTarget "SleepKitProtoWatch WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEB65D3124ADE742005A6975 /* Debug */,
-				AEB65D3224ADE742005A6975 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEB65D3824ADE742005A6975 /* Build configuration list for PBXNativeTarget "SleepKitProtoWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEB65D2E24ADE742005A6975 /* Debug */,
-				AEB65D2F24ADE742005A6975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

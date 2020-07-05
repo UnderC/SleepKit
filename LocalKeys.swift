@@ -8,6 +8,14 @@
 
 import Foundation
 struct LocalKeys {
+    // UserDefaults Keys
     let cache: String = "SleepKit_SleepTimeCache"
     let goal: String = "SleepKit_SleepGoal"
+    
+    // Complication Identifiers
+    let comps = ComplicationIdentifiers()
+}
+
+struct ComplicationIdentifiers {
+    let pgCuSm: String = "SleepKit_ProgressCircularSmallComplication" // ProGressCircUlarSMallcomplication
 }

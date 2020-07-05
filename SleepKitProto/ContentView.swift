@@ -22,7 +22,7 @@ struct ContentView: View {
                 HStack{
                     VStack(alignment: .leading) {
                         Text("수면 시간")
-                        Text(sleep.format(sleep.sleepTime ?? 0)).font(.system(size: 12.5))
+                        Text(sleep.format(sleep.sleepTime)).font(.system(size: 12.5))
                     }
                     Spacer()
                     Button(action: {
