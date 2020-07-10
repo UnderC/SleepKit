@@ -63,8 +63,9 @@ public class SleepKitStore: SleepKitStruct {
             let today = Calendar.current.dateComponents([.day], from: Date()).day
             let todayDate = gap > today! ? (31 - gap) : (today! - gap)
             for lastest in self.cache {
+                print("\(lastest.startDate), \(lastest.endDate), \(lastest.value)")
                 let lastDate = Calendar.current.dateComponents([.day], from: lastest.endDate).day
-                if (lastDate != todayDate) || lastest.value == 1 {
+                if (lastDate != todayDate) || lastest.value == 0 {
                     continue
                 }
                 result += Int(lastest.endDate.timeIntervalSince(lastest.startDate))

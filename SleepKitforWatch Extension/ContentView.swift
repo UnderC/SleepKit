@@ -14,7 +14,11 @@ struct ContentView: View {
         NavigationView {
             List {
                 ListItemView(title: "HK 접근 가능 여부", value: String(self.sleep.avaliable))
-                ListItemView(title: "수면 시간", value: self.sleep.format(self.sleep.sleepTime))
+                Button(action: {
+                    self.refresh()
+                }) {
+                    ListItemView(title: "수면 시간", value: self.sleep.format(self.sleep.sleepTime))
+                }
                 ListItemView(title: "수면 목표", value: self.sleep.format(self.sleep.sleepGoal))
                 ListItemView(title: "달성률", value: "\(Int(sleep.percent)) %")
                 ListItemView(title: "달성 여부", value: String(sleep.result))
@@ -22,6 +26,11 @@ struct ContentView: View {
         }.onAppear() {
             self.sleep.sleepTime = self.sleep.get()
         }
+    }
+    
+    func refresh () {
+        self.sleep.refresh()
+        sleep.sleepTime = sleep.get()
     }
 }
 

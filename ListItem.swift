@@ -16,7 +16,7 @@ struct ListItemView: View {
     
     var body: some View {
         HStack {
-            VStack {
+            VStack(alignment: .leading) {
                 Text(self.title)
                 if self.opts != nil { Text(self.opts!).font(.caption) }
             }

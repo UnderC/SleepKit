@@ -13,36 +13,22 @@ struct ContentView: View {
     @EnvironmentObject var sleep: SleepKitStore
     @State var loadTaskQueue: DispatchQueue? = nil
     @State var showSettingGoal = false
-    //@State var percent: Float = Float(0)
     
     var body: some View {
         return NavigationView {
             List {
                 ListItemView(title: "HK 접근 가능 여부", value: String(sleep.avaliable))
-                HStack{
-                    VStack(alignment: .leading) {
-                        Text("수면 시간")
-                        Text(sleep.format(sleep.sleepTime)).font(.system(size: 12.5))
-                    }
-                    Spacer()
-                    Button(action: {
-                        self.refresh()
-                    }) {
-                        Text("새로고침")
-                    }
+
+                Button(action: {
+                    self.refresh()
+                }) {
+                    ListItemView(title: "수면 시간", value: "새로고침", opts: sleep.format(sleep.sleepTime))
                 }
 
-                HStack{
-                    VStack(alignment: .leading) {
-                        Text("수면 목표")
-                        Text(sleep.format(sleep.sleepGoal)).font(.system(size: 12.5))
-                    }
-                    Spacer()
-                    Button(action: {
-                        self.showSettingGoal.toggle()
-                    }) {
-                        Text("목표 설정")
-                    }
+                Button(action: {
+                    self.showSettingGoal.toggle()
+                }) {
+                    ListItemView(title: "수면 목표", value: "\(Int(sleep.sleepGoal)) %")
                 }
                 
                 ListItemView(title: "달성률", value: "\(Int(sleep.percent)) %")
@@ -56,8 +42,8 @@ struct ContentView: View {
     }
     
     func refresh () {
+        sleep.refresh()
         sleep.sleepTime = sleep.get()
-        //percent = self.sleep.percent
     }
 }
 
